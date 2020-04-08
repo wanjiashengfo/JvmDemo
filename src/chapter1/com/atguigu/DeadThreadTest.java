@@ -7,6 +7,8 @@ public class DeadThreadTest {
             DeadThread dead = new DeadThread();
             System.out.println(Thread.currentThread().getName() + "结束");
         };
+        new Thread(r,"线程1").start();
+        new Thread(r,"线程2").start();
     }
 }
 
